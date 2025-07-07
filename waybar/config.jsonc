@@ -25,6 +25,11 @@
         "clock",
         "tray",
     ],
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1"
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -38,7 +43,6 @@
         "icon-size": 21,
         "spacing": 10,
          "icons": {
-           "blueman": "bluetooth",
            "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
          }
     },
