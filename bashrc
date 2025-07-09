@@ -10,6 +10,9 @@ alias nv='nvim'
 alias vi='nv'
 alias sudo='sudo '
 
+# uv aliases
+alias activate='source .venv/bin/activate'
+
 export PATH=$PATH:/home/midnight/.local/bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:$$HOME/.local/bin
@@ -31,3 +34,4 @@ export PATH=$PATH:$$HOME/.local/bin
 export PS1="\[$(tput bold)\]\[$(tput setaf 6)\]\[$(tput setaf 2)\][\[$(tput setaf 3)\]\u\[$(tput setaf 1)\]@\[$(tput setaf 3)\]\h \[$(tput setaf 6)\]\W\[$(tput setaf 2)\]]\[$(tput setaf 1)\]\$(__git_ps1)\[$(tput setaf 4)\]\$ \[$(tput sgr0)\]"
 
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)" > /dev/null
+eval "$(uv generate-shell-completion bash)"
