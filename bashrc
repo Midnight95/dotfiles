@@ -8,6 +8,7 @@
 alias ls='ls --color=auto'
 alias nv='nvim'
 alias vi='nv'
+alias sudo='sudo '
 
 export PATH=$PATH:/home/midnight/.local/bin
 export PATH=$PATH:/usr/local/bin
