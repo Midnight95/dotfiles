@@ -26,6 +26,7 @@ require('mason-lspconfig').setup({
 	"lua_ls",
 	"pylsp",
     "gopls",
+    "hyprls",
   },
   handlers = {
     lsp.default_setup,
