@@ -6,6 +6,7 @@ config.color_scheme = 'Gruvbox Dark (Gogh)'
 config.window_background_opacity = 0.6
 config.enable_wayland = false
 config.enable_tab_bar = false
+config.font = wezterm.font 'Comic Code'
 
 -- return config
 return config

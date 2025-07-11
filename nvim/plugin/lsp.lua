@@ -27,6 +27,7 @@ require('mason-lspconfig').setup({
 	"pylsp",
     "gopls",
     "hyprls",
+    "taplo",
   },
   handlers = {
     lsp.default_setup,
