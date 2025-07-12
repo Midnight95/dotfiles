@@ -13,5 +13,5 @@ install:
 
 
 	# install yazi themes
-	ya pkg -a dangooddd/kanagawa
+	ya pkg add dangooddd/kanagawa
 	ya pkg add yazi-rs/plugins:full-border
