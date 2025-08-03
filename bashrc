@@ -15,11 +15,10 @@ alias activate='source .venv/bin/activate'
 
 export PATH=$PATH:/home/midnight/.local/bin
 export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:$$HOME/.local/bin
 
 # go path
-# export PATH=$PATH:/usr/local/go/bin
-#  export GOROOT=/usr/local/go
+export PATH=$PATH:/usr/local/go/bin
+export GOROOT=/usr/local/go
 
 
 . /usr/share/bash-completion/bash_completion
