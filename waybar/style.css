@@ -4,7 +4,7 @@
     min-height: 0;
     font-family: "mononoki";
     font-weight: bold;
-    font-size: 16px;
+    font-size: 13px;
     padding: 0;
 }
 
@@ -22,8 +22,9 @@ tooltip {
 #tray,
 #cpu,
 #memory,
-#battery,
 #network,
+#temperature,
+#language,
 #pulseaudio {
     margin: 6px 6px 6px 0px;
     padding: 2px 8px;
@@ -40,6 +41,7 @@ tooltip {
     min-width: 0;
     box-shadow: inset 0 -3px transparent;
     padding: 2px 4px;
+    margin: 2px;
     color: #917a53;
 }
 
@@ -58,16 +60,13 @@ tooltip {
     color: #d4be98;
 }
 
-#battery {
-    background-color: #a9b665;
-    border: 2px solid #c7ab7a;
-    color: #6c782e;
-}
 
 #tray,
 #cpu,
 #memory,
 #network,
+#temperature,
+#language,
 #pulseaudio {
     background-color: #c9af82;
     border: 2px solid #917a53;
