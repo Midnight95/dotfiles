@@ -17,8 +17,9 @@ export PATH=$PATH:/home/midnight/.local/bin
 export PATH=$PATH:/usr/local/bin
 
 # go path
-export PATH=$PATH:/usr/local/go/bin
-export GOROOT=/usr/local/go
+export GOROOT=$HOME/.local/go
+export PATH=$PATH:$GOROOT/bin
+export UV_ENV_FILE=.env
 
 
 . /usr/share/bash-completion/bash_completion
