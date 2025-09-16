@@ -17,7 +17,8 @@ export PATH=$PATH:/home/midnight/.local/bin
 export PATH=$PATH:/usr/local/bin
 
 # go path
-export GOROOT=$HOME/.local/go
+export GOPATH=$HOME/.local/go
+export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$PATH:$GOROOT/bin
 export UV_ENV_FILE=.env
 
