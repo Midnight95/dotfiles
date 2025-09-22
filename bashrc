@@ -36,3 +36,8 @@ export PS1="\[$(tput bold)\]\[$(tput setaf 6)\]\[$(tput setaf 2)\][\[$(tput seta
 
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)" > /dev/null
 eval "$(uv generate-shell-completion bash)"
+
+
+if uwsm check may-start >> dev/null && uwsm select; then
+	exec uwsm start default
+fi
