@@ -14,8 +14,11 @@ cmp.setup({
 })
 
 local lua_opts = lsp.nvim_lua_ls()
-require('lspconfig').lua_ls.setup(lua_opts)
-require('lspconfig').twiggy_language_server.setup({})
+
+vim.lsp.config('lua_ls', lua_opts)
+vim.lsp.config('twiggy_language_server', {})
+--require('lspconfig').lua_ls.setup(lua_opts)
+--require('lspconfig').twiggy_language_server.setup({})
 
 -- to learn how to use mason.nvim with lsp-zero
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
